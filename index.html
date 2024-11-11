@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers le fichier CSS -->
+    <!-- Ajouter la bibliothèque AOS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=Montserrat:wght@400;700&family=Lora:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+
+
+     
+    <!-- Inclusion de Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="loading-overlay"></div> <!-- Fond noir pendant le chargement -->
+        <img src="img/camera.gif" alt="Image de fond" class="background-image"> <!-- Image de fond -->
+        <div class="header-content">
+            <h1 class="title"><u>PORTFOLIO</u></h1>
+        </div>
+    </header>
+
+    <!-- Section Présentation -->
+    <section id="presentation" class="section">
+        <img src="img/flodetoure.png" alt="Photo de présentation" class="presentation-img" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" style="margin-top: -50px;">
+        <div class="presentation-text" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+            <h2>Présentation</h2>
+            <p>
+                Bonjour, je suis <strong>Florian DUBOIS</strong>, étudiant en <strong>troisième année</strong> du <strong>Bachelor Universitaire de Technologie en Métiers du Multimédia et de l'Internet (BUT MMI)</strong>. Internet a toujours été une source d'inspiration pour moi, et comprendre son fonctionnement et son utilisation est essentiel pour mes ambitions futures. Le parcours MMI s'est donc avéré être un <strong>choix naturel</strong> et <strong>passionnant</strong>.
+                Mon objectif à court terme est de réaliser un <strong>stage cadré</strong> dans une entreprise privée où mes compétences en <strong>marketing</strong> et en <strong>audiovisuel</strong> seraient pleinement mises à contribution. À long terme, j’aimerais travailler dans l’audiovisuel tout en mettant en avant mes compétences en <strong>marketing</strong>.
+            </p>
+        </div>
+    </section>
+
+    <!-- Section Réalisations -->
+    <section id="realisations" class="section">
+        <h2 id="animated-text" class="animation-container">
+            <span id="typed-output"></span> <!-- Élément pour le texte animé -->
+            <span class="cursor"></span> <!-- Élément pour le curseur -->
+        </h2>
+
+        <!-- Réalisations -->
+        <div class="presentation-content" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <img src="img/animation-portfolio.gif" alt="Animation Logo" class="presentation-img uniform-img">
+            <div class="presentation-text">
+                <h3>Animation Mexa</h3>
+                <p>Cette animation a été réalisée dans le cadre d'une SAE (Situation d'Apprentissage et d'Évaluation) pour l'entreprise Mexa, spécialisée dans la vente de jeux pour enfants. L'animation se distingue par son approche à la fois rassurante et ludique, destinée à inspirer confiance tout en reflétant l'univers enfantin propre à la marque. Dans le cadre de cette SAE, j'ai également créé divers formats de contenu, afin de répondre aux différents besoins de communication de l'entreprise Mexa et de renforcer l'engagement des clients envers la marque.</p>
+            </div>
+        </div>
+        
+        <div class="presentation-content" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <img src="img/animation-logo2.gif" alt="Animation Logo" class="presentation-img uniform-img">
+            <div class="presentation-text">
+                <h3>Promotion INP</h3>
+                <p>Cette deuxième animation a été réalisée dans le cadre d'un stage. J'ai eu l'opportunité de produire une vidéo promotionnelle basée sur l'interview d'un enseignant-chercheur. Ce projet m'a été confié dans son intégralité, de la conception à la finalisation. L'INP, une grande école d'ingénieurs, a fait appel à mes compétences pour mettre en valeur cette interview, alliant créativité et rigueur technique.</p>
+            </div>
+        </div>
+
+        <div class="presentation-content" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <img src="img/logo_animation_fonds_noirv2.gif" alt="Animation Logo" class="presentation-img uniform-img">
+            <div class="presentation-text">
+                <h3>Logo Growing Garden</h3>
+                <p>Cette troisième animation a été réalisée dans le cadre d'une SAE dédiée à la création de notre propre entreprise de pots connectés. Dans ce projet, j'ai conçu une animation ainsi qu'un faux site marchand. L'objectif de cette animation est d'illustrer la croissance rapide d'une plante, rendue possible grâce aux fonctionnalités innovantes du pot connecté. De plus, j'ai créé un site internet avec <strong>WordPress</strong> pour présenter notre produit de manière professionnelle et accessible, mettant en avant les avantages et les caractéristiques uniques de nos pots connectés.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Réalisations 3D -->
+    <section id="objet" class="section" data-aos="fade-right">
+        <h2>Mes Réalisations 3D</h2>
+    
+        <div class="grid-container">
+            <!-- Premier objet 3D -->
+            <div class="grid-item">
+                <div class="sketchfab-embed-wrapper">
+                    <iframe title="animation3D" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" src="https://sketchfab.com/models/0620ea83be6140aa9d2c096e534fd67c/embed"> </iframe>
+                </div>
+                <h3>Animation carte electronique</h3>
+                <p>Modélisation 3D d'une carte électronique : Réalisée dans le cadre universitaire, cette modélisation présente des textures dynamiques et a été animée avec Blender, illustrant de manière innovante les détails des circuits électroniques.</p>
+            </div>
+        
+            <!-- Deuxième objet 3D -->
+            <div class="grid-item">
+                <div class="sketchfab-embed-wrapper">
+                    <iframe title="planforetpipou" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" src="https://sketchfab.com/models/c1d3a34db52443f6ba198c1471728437/embed"> </iframe>
+                </div>
+                <h3>Plan de Forêt</h3>
+                <p>Modèle 3D d'une forêt stylisée : Créé personnellement, ce modèle met en avant une forêt stylisée sous un effet de coucher de soleil, capturant la beauté et la sérénité de la nature créer avec Blender.</p>
+            </div>
+        
+            <!-- Troisième objet 3D -->
+            <div class="grid-item">
+                <div class="sketchfab-embed-wrapper">
+                    <iframe title="potion" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" src="https://sketchfab.com/models/94dd8d7298444f08873028786ce81910/embed"> </iframe>
+                </div>
+                <h3>Potion Magique</h3>
+                <p>Réalisation 3D d'une potion magique : Cette modélisation personnelle met en avant une conception unique et des textures vibrantes, reflétant ma passion pour la modélisation et l'animation 3D créer avec Blender.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="video" class="section">
+    <h2>Mes vidéos </h2>
+
+    <div class="carousel">
+        <div class="carousel-container">
+            <!-- Vidéo 1 -->
+            <div class="carousel-slide active">
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/R1Rw24tbcPw?si=68DvfXN5-4bjWOfV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    
+                </div>
+            </div>
+
+            <!-- Vidéo 2 -->
+            <div class="carousel-slide">
+                <div class="video-container">
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/DyKoGYTFij8?si=ne-ZEdZfZ23oUlnI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Vidéo 3 -->
+            <div class="carousel-slide">
+                <div class="video-container">
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Boutons de navigation -->
+        <button class="carousel-btn prev-btn">&#10094;</button>
+        <button class="carousel-btn next-btn">&#10095;</button>
+    </div>
+
+  <p data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+    Depuis mon plus jeune âge, j'ai été profondément influencé par l'univers d'<strong>Internet</strong> et les <strong>créateurs de contenu</strong>, en particulier sur <strong>YouTube</strong>. Cette passion pour la <strong>création vidéo</strong> m'a permis de réaliser à la fois des projets <strong>personnels</strong> et <strong>professionnels</strong>. J'ai ainsi produit des vidéos variées, allant des <strong>interviews</strong> à des vidéos d'<strong>anniversaire</strong>, en passant par des contenus <strong>gaming</strong>.
+    Sur le plan <strong>professionnel</strong>, j'ai eu l'opportunité de réaliser des projets plus <strong>formels</strong>, comme la vidéo <strong>promotionnelle</strong> pour l'<strong>INP</strong> ou encore des vidéos <strong>académiques</strong>, notamment celle sur <strong>Albert Londres</strong> ou j'ai pu m'investir dans l'animation et le son particulièrement mais aussi un peu de plan de coupe.
+    Chaque vidéo est pour moi une opportunité de perfectionner mes <strong>compétences</strong> et d'explorer de nouvelles façons d'<strong>apprendre</strong>.
+</p>
+
+</section>
+
+
+    <!-- Footer -->
+        <footer class="footer" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>Contact</h3>
+                <p>Email : <a href="mailto:florian.dubois@example.com">florian.dubois1@icloud.com</a></p>
+                <p>Téléphone : +33 6 95 74 56 67</p>
+            </div>
+
+            <div class="footer-center">
+                <h3>Suivez-moi</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/flow-dbs/" target="_blank">
+                        <img src="img/linkedin.png" alt="LinkedIn" class="social-icon">
+                    </a>
+                    <a href="img/CV.pdf" target="_blank">
+                        <img src="img/cv.png" alt="GitHub" class="social-icon">
+                    </a>
+                    <a href="https://www.instagram.com/fl_dbs_?igsh=cncwdWhrZ20xZzNm&utm_source=qr" target="_blank">
+                        <img src="img/instagram.png" alt="Twitter" class="social-icon">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <h3>À propos</h3>
+                <p>Ce portfolio est un aperçu de mon parcours et de mes compétences en <strong>MMI</strong>. Merci pour votre visite !</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Florian Dubois | Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init(); // Initialisation de AOS
+</script>
+
+<script>
+    // Initialisation de Typed.js pour le texte animé
+    const options = {
+        strings: ["Mes Animations", "Mes Animations", "Mes Animations"],
+        typeSpeed: 40,
+        backSpeed: 50,
+        loop: true,
+        showCursor: true
+    };
+    
+    const typed = new Typed('#typed-output', options);
+
+    // Logique pour le carousel
+    const slides = document.querySelectorAll('.carousel-slide');
+    const nextBtn = document.querySelector('.next-btn');
+    const prevBtn = document.querySelector('.prev-btn');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (index + slides.length) % slides.length; // Gérer le cycle
+        slides[currentSlide].classList.add('active');
+        updateSlidePosition();
+    }
+
+    function updateSlidePosition() {
+        const offset = -currentSlide * 100; // Calculer l'offset en fonction de l'index
+        document.querySelector('.carousel-container').style.transform = `translateX(${offset}%)`;
+    }
+
+    nextBtn.addEventListener('click', () => showSlide(currentSlide + 1));
+    prevBtn.addEventListener('click', () => showSlide(currentSlide - 1));
+</script>
+</body>
+
+</html>

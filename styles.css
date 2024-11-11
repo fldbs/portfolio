@@ -1,0 +1,592 @@
+/* ========== Global Styles ========== */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+
+}
+
+h2 {
+    font-family: 'Protest Strike' sans-serif;
+}
+
+/* ========== Header ========== */
+.header {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #2D5401;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+}
+
+.header-content {
+    position: relative;
+    text-align: center;
+    z-index: 3;
+}
+
+.title {
+    font-size: 4rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+    animation: changeFont 0.8s ease-in-out infinite;
+    display: inline; /* S'assure que le titre s'affiche en ligne */
+}
+
+/* ========== Section Presentation ========== */
+#presentation {
+    background-color: #A5BF7E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.presentation-img {
+    max-width: 45%;
+    height: auto;
+    padding: 35px;
+}
+
+.presentation-text {
+    max-width: 50%;
+    margin-left: 2rem;
+    font-family: 'Georgia', serif;
+    color: #214001;
+}
+
+.presentation-text h2 {
+    font-size: 2.5rem;
+    color: #2D5401;
+    margin-bottom: 1rem;
+}
+
+.presentation-text p {
+    font-size: 1.2rem;
+    color: #214001;
+    line-height: 1.6;
+}
+
+/* ========== Projects Section ========== */
+.projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    width: 300px;
+    background: #fff;
+    margin: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #214001;
+}
+
+/* ========== Réalisations Section ========== */
+#realisations {
+    background-color: #214001;
+    color: #A5BF7E;
+    display: flex;
+    flex-direction: column; /* Garde les éléments en colonne pour les titres */
+    align-items: center;
+    justify-content: flex-start; /* Garde l'alignement des titres en haut */
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif; /* Appliquer la nouvelle police ici */
+}
+
+#realisations h2 {
+    font-size: 3.5rem; /* Augmente la taille de la police */
+    margin: 2rem 0 1rem; /* Ajoute un peu d'espace entre les titres */
+    color: #A5BF7E;
+    font-weight: 700; /* Poids pour le titre */
+    font-family: 'Protest Strike', sans-serif;;
+}
+
+.realisations-item h3 {
+    font-size: 1.8rem;
+    color: #214001;
+    font-family: 'Roboto', sans-serif; /* Appliquer la même police pour les titres des réalisations */
+}
+
+.realisations-item p {
+    color: #214001;
+    line-height: 1.4;
+    font-family: 'Roboto', sans-serif; /* Appliquer la même police pour le texte des réalisations */
+}
+
+
+.realisations-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+/* ========== Keyframes for Slide Animation ========== */
+@keyframes slide {
+    0% {
+        transform: translateX(-10px); /* Déplacement vers la gauche */
+    }
+    50% {
+        transform: translateX(10px); /* Déplacement vers la droite */
+    }
+    100% {
+        transform: translateX(-10px); /* Retour à la position d'origine */
+    }
+}
+
+.presentation-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%; /* Ajuste la largeur des contenus */
+    margin-bottom: 2rem;
+}
+
+.presentation-content img {
+    width: 40%;
+    height: auto;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);;
+    margin-top: 100px;
+}
+
+.presentation-content .presentation-text {
+    width: 55%;
+    padding-left: 2rem;
+    color: #A5BF7E;
+    font-family: 'Montserrat', serif;
+
+}
+
+.presentation-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.presentation-content p {
+    font-size: 1.2rem;
+    color: #76A60F;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+    .presentation-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .presentation-content img {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .presentation-content .presentation-text {
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
+/* ========== Cursor Animation ========== */
+
+        #animations { /* Assurez-vous que l'ID ou la classe est correcte pour votre section */
+            background-color: #f5f5f5; /* Couleur de fond de la section */
+            padding: 40px; /* Ajoute un peu d'espace autour de la section */
+            text-align: center; /* Centre le texte dans la section */
+        }
+
+        #animations h2 {
+            font-family: 'Lobster', cursive; /* Applique la police "Lobster" */
+            font-size: 3.5rem; /* Taille de la police */
+            color: #2D5401; /* Couleur du texte */
+            margin-bottom: 2rem; /* Espacement sous le titre */
+        }
+
+        .animation-item {
+            margin: 20px; /* Espacement autour des éléments d'animation */
+        }
+
+.animation-container {
+    display: inline-block; /* Permet au conteneur de s'adapter à la taille du texte */
+    font-size: 2em;
+     }
+
+#animated-text {
+    font-size: 2em; /* Taille du texte */
+    color: #333; /* Couleur du texte */
+    white-space: nowrap; /* Empêche le retour à la ligne */
+    display: inline-block; /* Permet d'appliquer des styles de curseur */
+    line-height: 1; /* Assure que le texte et le curseur soient alignés */
+    position: relative; /* Pour un meilleur positionnement du curseur */
+    vertical-align: middle; /* Aligne le texte et le curseur au milieu */
+}
+
+.cursor {
+    width: 5px; /* Largeur du curseur */
+    height: 30px; /* Hauteur du curseur, ajuste selon tes besoins */
+    background: red; /* Couleur du curseur */
+    animation: blink 1s step-end infinite; /* Animation de clignotement */
+    margin-left: 5px; /* Espacement entre le texte et le curseur */
+}
+
+/* Animation de clignotement */
+@keyframes blink {
+    0%, 100% {
+        opacity: 1; /* Plein affichage */
+    }
+    50% {
+        opacity: 0; /* Invisible */
+    }
+}
+
+/* ========== Section 3D ========== */
+#objet {
+    background-color: #fffff;
+    padding: 0px 0px;
+}
+
+#objet h2 {
+    position: relative;
+    font-family: 'Protest Strike', sans-serif;
+    font-size: 3em; /* Ajuste la taille selon ton besoin */
+    color: #6FB368; /* Couleur du texte principal */
+    text-shadow: 
+        1px 1px 0 rgba(0, 0, 0, 0.5); /* Ombre légère */
+    margin-bottom: 20px; /* Espacement en bas du titre */
+    transition: transform 0.3s ease, color 0.3s ease; /* Transition pour effet smooth */
+}
+
+#objet h2::after {
+    content: ''; /* Pseudo-élément vide pour la ligne */
+    position: absolute;
+    left: 50%; /* Centrer la ligne horizontalement */
+    bottom: -5px; /* Positionne la ligne juste en dessous du texte */
+    width: 0; /* Initialement, la ligne est invisible (0 largeur) */
+    height: 3px; /* Épaisseur de la ligne */
+    background-color: #6FB368; /* Même couleur que le texte */
+    transition: width 0.4s ease, left 0.4s ease; /* Animation pour la largeur */
+    transform: translateX(-50%); /* Ajuste pour centrer la ligne par rapport au milieu */
+}
+
+#objet h2:hover {
+    transform: translateY(-5px); /* Déplace le texte vers le haut */
+}
+
+#objet h2:hover::after {
+    width: 100%; /* Étend la ligne de gauche à droite au hover */
+    left: 50%; /* Maintient la position à partir du centre */
+}
+
+
+.section {
+    text-align: center; /* Centrer le texte */
+}
+
+/* Grille pour la disposition des objets 3D */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Style des objets 3D */
+.grid-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.grid-item p {
+    color: #666;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Effets de survol pour rendre la section plus interactive */
+.grid-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Style des iframes pour bien les ajuster */
+.sketchfab-embed-wrapper iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Responsive pour les petits écrans */
+@media (max-width: 600px) {
+    .sketchfab-embed-wrapper iframe {
+        height: 200px;
+    }
+}
+
+/* ========== Footer ========== */
+.footer {
+    background-color: #214001;
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex-basis: 30%;
+    margin-bottom: 2rem;
+}
+
+.footer-left a, .footer-right a {
+    color: #A5BF7E;
+    text-decoration: none;
+}
+
+.footer-left a:hover, .footer-right a:hover {
+    text-decoration: underline;
+}
+
+.footer-center .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    border-top: 1px solid #648C27;
+    padding-top: 1rem;
+    margin-top: 2rem;
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+/* ========== Carousel ========== */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #214001;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-slide iframe {
+    width: 100%;
+    height: auto;
+    border: none;
+}
+
+/* ========== Carousel ========== */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #214001;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    /* Ajoute une hauteur pour le conteneur du carousel */
+    height: auto;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 20px; /* Optionnel : pour ajouter de l'espace autour des vidéos */
+}
+
+/* Conteneur pour maintenir le ratio d'aspect */
+.carousel-slide .video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 ratio */
+    overflow: hidden;
+}
+
+.carousel-slide .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ========== Carousel Buttons ========== */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(250, 250, 250, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 2;
+    user-select: none;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #214001;
+}
+
+/* ========== style video ========== */
+
+
+/* ========== Section Vidéo ========== */
+#video {
+    padding: 0px 20px; /* Espacement autour de la section */
+    background-color: #ffff; /* Couleur de fond douce */
+    border-radius: 8px; /* Coins arrondis */
+   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1); /* Ombre uniquement en bas */
+}
+
+#video h2 {
+    font-size: 3rem; /* Taille de police pour le titre */
+    color: #214001; /* Couleur pour correspondre au thème */
+    text-align: center; /* Centrer le titre */
+    margin-bottom: 20px; /* Marge en bas du titre */
+    font-family: 'Protest Strike', sans-serif; /* Police pour le titre */
+}
+
+#video p{
+    font-size: 1.2rem;
+    color: #214001;
+    line-height: 1.6;
+    font-family: 'monserrat' sans serif ;
+    padding: 0px 150px
+}
+
+/* Espacement entre le carousel et le texte */
+#video .carousel {
+    margin-bottom: 30px; /* Marge inférieure pour le carousel */
+}
+
+/* ========== Keyframes and Animations ========== */
+@keyframes changeFont {
+    0% { font-family: 'Arial', sans-serif; }
+    25% { font-family: 'Georgia', serif; }
+    50% { font-family: 'Courier New', monospace; }
+    75% { font-family: 'Verdana', sans-serif; }
+    100% { font-family: 'Times New Roman', serif; }
+}
+
+/* ========== Responsive Styles ========== */
+@media (max-width: 768px) {
+    .title { font-size: 3rem; }
+
+    #presentation {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .presentation-img, .presentation-text {
+        max-width: 100%;
+    }
+
+    .project-item {
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left, .footer-center, .footer-right {
+        flex-basis: 100%;
+    }
+
+    .footer-center {
+        margin-bottom: 2rem;
+    }
+}
